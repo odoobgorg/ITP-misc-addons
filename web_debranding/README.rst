@@ -34,6 +34,8 @@ module open Settings\\System Parameters and modify
 * ``web_debranding.send_publisher_warranty_url`` - set 0 to disable server requests to odoo.com and 1 otherwise (useful for enterprise contractors). Works only for non-enterprise versions of odoo, check `note <#enterprise-users-notice>`__ below.
 * ``web_debranding.planner_footer``
 
+Note. More user friendly way to configure the module is available in `Brand Kit <https://apps.odoo.com/apps/modules/9.0/theme_kit/>`__.
+
 Further debranding
 ==================
 
@@ -42,10 +44,6 @@ Further debranding
 * install **pos_debranding** module if module "POS" is installed in your system
 * delete "Odoo.com Accounts" record at Settings\\Users\\OAuth Providers if module "OAuth2 Authentication" is installed. in your system
 * to debrand **/web/database/manager**:
-
-  * add web_debranding to server wide modules, e.g.
-
-    ./odoo.py --load=web,web_kanban,web_debranding
 
   * edit addons/web/views/database_manager.html file:
 
